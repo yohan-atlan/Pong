@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pong</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" class="fa fa-adjust">
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div class="lj-preloader"></div>
+    <!-- /PRELOADER -->
+
+
+    <!-- FULLPAGE -->
+    <div id="fullpage">
+
+        <!-- FIRST SECTION -->
+        <header id="bg" class="section">
+
+            <!-- HEADER OVERLAY -->
+            <div class="desk-overlay-header lj-overlay lj-opacity"></div>
+            <!-- /HEADER OVERLAY -->
+
+            <!-- MENU -->
+            <div class="lj-menu">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- LOGO -->
+                        <div class="col-xs-5 col-sm-3 lj-logo wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.5s">
+                            <a href="#home">
+                                <img src="img/logo.png" class="lj-logo" alt="">
+                            </a>
+                        </div>
+                        <!-- LOGO -->
+
+                        <nav class="col-xs-7 col-sm-9 lj-text-right lj-menu-buttons">
+
+                            <ul class="lj-menu-long">
+                                <li data-menuanchor="home"><a href="#home" class="activePage wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.7s">Home</a>
+                                </li>
+                                <li data-menuanchor="home"><a href="classiquesolo.html" class=" wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.9s"><i class="game fa fa-gamepad"></i></a>
+                                </li>
+
+                                <li data-menuanchor="home/services"><a href="#home/services" class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="2.3s">Shop</a>
+                                </li>
+                                <li data-menuanchor="contact"><a href="#contact" class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="2.6s">Leave a comment</a>
+                                </li>
+                            </ul>
+
+                            <ul class="lj-menu-short">
+                                <li data-menuanchor="home/about"><a data-link="about-slide" href="#home/about"><i class="fa fa-info"></i></a>
+                                </li>
+                                <li data-menuanchor="home/services"><a data-link="services-slide" href="#home/services"><i class="fa fa-flash"></i></a>
+                                </li>
+                                <li data-menuanchor="contact"><a data-link="contact-slide" href="#contact"><i class="fa fa-envelope"></i></a>
+                                </li>
+                            </ul>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /MENU -->
+
+            <!-- FIRST SLIDE -->
+            <div id="home-slide" class="home slide active anchor" data-anchor="start">
+
+                <div class="container wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.9s">
+
+                    <!-- HOME TITLE -->
+                    <div class="row">
+                        <div class="col-xs-12 lj-home-title">
+                            <h2>Welcome to Pong experience</h2>
+                            <h1>Let's Pong !</h1>
+                        </div>
+                    </div>
+                    <!-- /HOME TITLE -->
+
+                    <div class="row">
+
+                        <!-- QUOTE -->
+                        <div class="col-sm-6 lj-quote">
+
+                            <div>
+                                <i class="fa fa-quote-left"></i>
+                                <p>The best Pong game in this World !! Best game since Windows Millenium !</p>
+                                <span>Bill Gates</span>
+                            </div>
+
+                            <div>
+                                <i class="fa fa-quote-left"></i>
+                                <p>The most addicted game ever! I love it!</p>
+                                <span>Rihana</span>
+                            </div>
+
+                            <div>
+                                <i class="fa fa-quote-left"></i>
+                                <p>I really love this game ! I enjoy a lot to beat my friends, it's enjoyable !</p>
+                                <span>Winston Churchill</span>
+                            </div>
+
+                            <div>
+                                <i class="fa fa-quote-left"></i>
+                                <p>Wow ! Just one word to say : Awesome ! Really ! Yihi !</p>
+                                <span>Michael Jackson</span>
+                            </div>
+
+                        </div>
+                        <!-- /QUOTE -->
+                        <div class="col-sm-6 lj-play">
+                            <a href="classiquesolo.html">
+                                <button type="button" class="btn btn-default btn-lg">
+                                    Play Pong !
+                                </button>
+                            </a>
+                        </div>
+                        <!-- HOME TEXT PARAGRAPH -->
+
+                        <!-- /HOME TEXT PARAGRAPH -->
+                        <!-- COUNTDOWN -->
+                        <div class="col-sm-6 lj-countdown">
+                            <div class="row">
+
+                            </div>
+                        </div>
+                        <!-- /COUNTDOWN -->
+
+                        <!-- TWITTER FEED -->
+                        <div class="col-sm-6 lj-twitter-feed">
+
+                        </div>
+                        <!-- /TWITTER FEED -->
+                        <!-- SUBSCRIBE -->
+                        <div class="col-sm-6 lj-subscribe">
+
+                            <!-- SUBSCRIBE PARAGRAPH -->
+                            <h2 class="event">Next event coming soon !</h2>
+                            <br />
+                            <p>Please enter your email to received invitation</p>
+                            <!-- /SUBSCRIBE PARAGRAPH -->
+
+                            <!-- SUBSCRIBE FORM -->
+                            <div class="lj-subscribe-form">
+
+                                <form id="subscribe">
+                                    <!--
+                 -->
+                                    <input type="text" value="" name="subscribe-email" id="subscribe-email" placeholder="Enter your e-mail">
+                                    <!--
+                 -->
+                                    <input type="submit" value="&#xf0e0;" name="subscribe-submit">
+
+                                    <!-- SUBSCRIBE FORM MESSAGE -->
+                                    <label for="subscribe-email" class="lj-subscribe-message"></label>
+                                    <!-- /SUBSCRIBE FORM MESSAGE -->
+                                </form>
+
+                            </div>
+                            <!-- /SUBSCRIBE FORM -->
+
+                        </div>
+                        <!-- /SUBSCRIBE -->
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /FIRST SLIDE -->
+
+
+
+            <!-- SECOND SLIDE -->
+            <div id="about-slide" class="about slide anchor" data-anchor="about">
+
+                <div class="container">
+
+                    <!-- ABOUT TITLE-->
+                    <div class="row">
+                        <div class="col-xs-12 lj-about-title">
+                            <h2>Why choose us?</h2>
+                            <h1>We build great brands</h1>
+                        </div>
+                    </div>
+                    <!-- /ABOUT TITLE-->
+
+
+                    <div class="row">
+
+                        <!-- ABOUT PARAGRAPH -->
+                        <div class="col-sm-12 col-md-9 lj-about-paragraph">
+                            <h3>We don't want to conquer the cosmos, we simply want to extend the boundaries of Earth to the frontiers of the cosmos.</h3>
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <p class="lj-text-bold">We take off into the cosmos, ready for anything: for solitude, for hardship, for exhaustion, death.</p>
+                                    <p>Modesty forbids us to say so, but there are times when we think pretty well of ourselves. And yet, if we examine it more closely, our enthusiasm turns out to be all a sham.</p>
+                                </div>
+                                <div class="col-sm-7">
+                                    <p>We think of ourselves as the Knights of the Holy Contact. This is another lie.</p>
+                                    <p>We are only seeking Man. We have no need of other worlds. A single world, our own, suffices us; but we can't accept it for what it is. We are searching for an ideal image of our own world: we go in quest of a planet, a civilization superior to our own.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /ABOUT PARAGRAPH -->
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- /SECOND SLIDE -->
+
+
+            <!-- THIRD SLIDE -->
+            <div id="services-slide" class="services slide anchor" data-anchor="services">
+
+                <!-- SERVICES -->
+                <div class="container">
+
+                    <!-- SERVICES TITLE -->
+                    <div class="row">
+                        <div class="col-xs-12 lj-services-title">
+                            <h2>What's our offer?</h2>
+                            <h1>Do you want a new skin ?</h1>
+                        </div>
+                    </div>
+                    <!-- /SERVICES TITLE -->
+
+                    <!-- ICONS -->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-9">
+                            <div class="row">
+
+                                <div class="col-sm-6 col-lg-5 lj-icon-box first">
+                                    <img class="petit" src="img/skatepb.png" alt="">
+                                    <h3>Skate<a href="#" class="fa fa-shopping-cart"></a></h3>
+                                    <p>Price: 0.50 $.</p>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-5 col-lg-offset-1 lj-icon-box">
+                                    <img class="petit" src="img/slat.png" alt="">
+                                    <h3>Zlatan<a href="#" class="fa fa-shopping-cart"></a></h3>
+                                    <p>Price: 0.50 $.</p>
+                                </div>
+
+                            </div>
+                            <div class="row">
+
+                                <div class="col-sm-6 col-lg-5 lj-icon-box">
+                                    <img class="petit" src="img/fuse.png" alt="">
+
+                                    <h3>Fusée<a href="#" class="fa fa-shopping-cart"></a></h3>
+                                    <p>Price: 0.50 $.</p>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-5 col-lg-offset-1 lj-icon-box">
+                                    <img class="petit" src="img/taco.png" alt="">
+                                    <h3>Tacos<a href="#" class="fa fa-shopping-cart"></a></h3>
+                                    <p>Price: 0.50 $.</p>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /ICONS -->
+
+                </div>
+                <!-- /SERVICES -->
+
+            </div>
+            <!-- /THIRD SLIDE -->
+
+            <!-- FOOTER -->
+            <div class="footer wow fadeInUp" data-wow-duration="2s" data-wow-delay="3s">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- FOOTER SOCIALS -->
+                        <div class="col-xs-4">
+
+                            <ul class="lj-footer-socials wow fadeIn" data-wow-duration="3s" data-wow-delay="4s">
+                                <li>
+                                    <a class="fa fa-facebook" href="#"></a>
+                                </li>
+                                <!--
+             -->
+                                <li>
+                                    <a class="fa fa-instagram" href="#"></a>
+                                </li>
+                                <!--
+             -->
+                                <li>
+                                    <a class="fa fa-twitter" href="#"></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- /FOOTER SOCIALS -->
+
+                        <!-- FOOTER COPYRIGHTS -->
+                        <div class="col-xs-8 lj-footer-copyrights wow fadeIn" data-wow-duration="3s" data-wow-delay="2.5s">
+
+                            <p>
+
+                                <!-- YOUTUBE CONTROLS -->
+                                <span class="yt-controls">
+                 
+                </span>
+                                <!-- /YOUTUBE CONTROLS -->
+
+                                <span class="copy">&copy; Chopped by JeanJacque designer.</span>
+                            </p>
+                        </div>
+                        <!-- /FOOTER COPYRIGHTS -->
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /FOOTER -->
+
+        </header>
+        <!-- /FIRST SECTION -->
+
+
+        <!-- SECOND SECTION -->
+        <div class="lj-map section">
+
+            <!-- GOOGLE MAP -->
+            <div id="canvas_holder">
+                <div id="map_canvas"></div>
+            </div>
+            <!-- /GOOGLE MAP -->
+
+            <!-- MAP TOP BAR -->
+            <div class="lj-map-top-bar">
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- MAP MENU -->
+
+                        <!-- MAP BACK -->
+
+                        <ul class="col-xs-3 lj-map-back lj-text-left">
+                            <li><a href="#back"><i class="fa fa-angle-left"></i> Back</a>
+                            </li>
+                        </ul>
+                        <!-- /MAP BACK -->
+
+                        <ul class="col-xs-9 lj-map-menu lj-text-right">
+                            <li data-menuanchor="home"><a href="#home">Home</a>
+                            </li>
+                            <li data-menuanchor="home"><a href="classiquesolo.html" data-menuanchor="jeupongx%20(3).html"><i class="game fa fa-gamepad"></i></a>
+                            </li>
+
+                            <li data-menuanchor="home/services"><a href="#home/services">Shop</a>
+                            </li>
+                        </ul>
+
+                        <!-- /MAP MENU -->
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /MAP TOP BAR -->
+
+            <!-- CONTACT -->
+            <div id="contact-slide" class="contact anchor">
+
+                <!-- HEADER OVERLAY -->
+                <div class="desk-overlay-contact lj-overlay lj-opacity"></div>
+                <!-- /HEADER OVERLAY -->
+
+                <div class="container">
+
+                    <!-- CONTACT TITLE -->
+                    <div class="row">
+                        <div class="col-xs-12 lj-contact-title">
+                            <h2>Get in touch with us</h2>
+                            <h1>Give us <span>your opinion</span> about our game !</h1>
+                        </div>
+                    </div>
+                    <!-- /CONTACT TITLE -->
+
+                    <!-- ADDRESS -->
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-5 lj-address">
+
+                            <!-- WORK HOURS -->
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <span>Work hours:</span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-6 col-lg-5">
+                                    <p>Mon - Sat: 9.00 - 17.00</p>
+                                </div>
+
+                            </div>
+                            <!-- /WORK HOURS -->
+
+
+                            <!-- ADDRESS INFO -->
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <span>Address:</span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-6 col-lg-5">
+                                    <p>HETIC
+                                        <br />27 Bis Rue du Progrès
+                                        <br />93100 Montreuil France</p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <p>Tel: 06 69 35 54 03
+                                        <br />Fax: 05 57 91 50 91
+                                        <br />
+                                        <a href="#">David.es@live.fr</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /ADDRESS INFO -->
+
+                            <!-- ADDRESS TEXT PARAGRAPH -->
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>If you have any comments - feel free to speak, we'll be more than happy to read them!</h3>
+                                </div>
+                            </div>
+                            <!-- /ADDRESS TEXT PARAGRAPH -->
+
+                        </div>
+                        <div class="col-sm-6 col-lg-5 col-lg-offset-2 lj-contact-form">
+
+                            <!-- CONTACT FORM -->
+                            <form id="contactform" class="clearfix">
+                                <input type="text" value="" name="contact-name" id="contact-name" placeholder="Name:">
+                                <input type="text" value="" name="contact-email" id="contact-email" placeholder="Email:">
+                                <textarea name="contact-message" id="contact-message" placeholder="Message:"></textarea>
+                                <input type="submit" value="Send" name="contact-submit">
+
+                                <!-- CONTACT FORM MESSAGE-->
+                                <div class="lj-contact-message">
+
+                                </div>
+                                <!-- /CONTACT FORM MESSAGE-->
+
+                            </form>
+                            <!-- /CONTACT FORM -->
+
+                        </div>
+
+                        <div class="lj-mobile-footer">
+
+                        </div>
+
+                    </div>
+                    <!-- /ADDRESS -->
+
+                </div>
+
+            </div>
+            <!-- /CONTACT -->
+
+
+        </div>
+        <!-- /SECOND SECTION -->
+
+
+        <!-- /FULLPAGE -->
+    </div>
+
+    <!-- BACKSTRETCH -->
+    <div class="backstretch-holder"></div>
+    <!-- /BACKSTRETCH -->
+
+    <!-- HEADER OVERLAY -->
+    <div class="mob-overlay lj-overlay lj-opacity"></div>
+    <!-- /HEADER OVERLAY -->
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- Google maps js scripts -->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <!-- assets js -->
+    <script src="js/assets.js"></script>
+    <script src="js/options.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

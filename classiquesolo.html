@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="jeua">
+    <audio id="sonApplause" visibility="hidden">
+        <source src="sons/Basique/applause.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sonPingpong" visibility="hidden">
+        <source src="sons/Basique/pingpong.mp3" type="audio/mp3" />
+    </audio>
+
+
+    <audio id="sonRaquette1" visibility="hidden">
+        <source src="sons/Space/Raquette1.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sonRaquette2" visibility="hidden">
+        <source src="sons/Space/Raquette2%20.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sonWin" visibility="hidden">
+        <source src="sons/Space/win.mp3" type="audio/mp3" />
+    </audio>
+
+    <audio id="sonWinF" visibility="hidden">
+        <source src="sons/Foot/win.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sonFoot2" visibility="hidden">
+        <source src="sons/Foot/Raquette1.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sonFoot1" visibility="hidden">
+        <source src="sons/Foot/Raquette2.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="sonBord" visibility="hidden">
+        <source src="sons/poteau.mp3" type="audio/mp3" />
+    </audio>
+
+    <div class="titrejeu">
+        <h1>Pong Original</h1>
+
+        <ul class="lj-menu-long">
+            <li data-menuanchor="home"><a href="index.html" class=" wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">Home</a>
+            </li>
+        </ul>
+    </div>
+    <div class="menutypejeu">
+        <ul class="lj-menu-long">
+            <h4>Univers</h4>
+            <li data-menuanchor="home"><a id="original" onclick="original();" class="activePage wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">Original</a>
+            </li>
+            <li data-menuanchor="home"><a id="space" role="button" onclick="change();" class=" wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.2s">Space</a>
+            </li>
+            <li data-menuanchor="home"><a id="foot" onclick="change1();" class=" wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1.2s">Foot</a>
+            </li>
+        </ul>
+        <ul class="lj-menu-long">
+            <h4>Playmods</h4>
+            <li data-menuanchor="home"><a id="solo" onclick="solo();" class="activePage wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">Solo</a>
+            </li>
+            <li data-menuanchor="home"><a id="multi" onclick="multiplayers();" class=" wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.2s">Multiplayers</a>
+            </li>
+        </ul>
+        <ul class="lj-menu-long" id="difsolo">
+            <h4>Diificulty Solo</h4>
+            <li data-menuanchor="home"><a id="easy" onclick="difficulte();" class=" activePage wow fadeIn dif1" data-wow-duration="1s" data-wow-delay="1s">Easy </a>
+            </li>
+            <li data-menuanchor="home"><a id="middle" onclick="difficulte2();" class="wow fadeIn dif2" data-wow-duration="1.3s" data-wow-delay="1.2s">Middle </a>
+            </li>
+            <li data-menuanchor="home"><a id="hard" onclick="difficulte3();" class=" wow fadeIn dif3" data-wow-duration="1.3s" data-wow-delay="1.2s">Hard</a>
+            </li>
+        </ul>
+        <ul class="lj-menu-long" id="difmulti">
+            <h4>Difficulty Multiplayers</h4>
+            <li data-menuanchor="home"><a id="easym" onclick="difficultem();" class=" activePage wow fadeIn difm1" data-wow-duration="1s" data-wow-delay="1s">Easy</a>
+            </li>
+            <li data-menuanchor="home"><a id="middlem" onclick="difficultem2();" class="wow fadeIn difm2" data-wow-duration="1.3s" data-wow-delay="1.2s">Middle</a>
+            </li>
+            <li data-menuanchor="home"><a id="hardm" onclick="difficultem3();" class=" wow fadeIn difm3" data-wow-duration="1.3s" data-wow-delay="1.2s">Hard</a>
+            </li>
+        </ul>
+        <div class="col-sm-6" id="sonOn">
+            <button type="button" class="btn btn-default btn-lg" style="width: 70px; height: 40px;" onclick="activeSon();">
+                <i class="fa fa-volume-up"></i>
+            </button>
+        </div>
+        <div class="col-sm-6 " id="sonOff">
+            <button type="button" class="btn btn-default btn-lg" style="width: 70px; height: 40px;" onclick="activeSon();">
+                <i class="fa fa-volume-off"></i>
+            </button>
+        </div>
+        <div id="commandesMulti">
+            <ul>
+                <h3>Commandes J2</h3>
+                <li>O : Aller en haut</li>
+                <li>L : Aller en Bas</li>
+                <li>Espace : Lancer la balle</li>
+            </ul>
+        </div>
+        <div id="commandesSolo">
+            <ul>
+                <h3>Commandes J1</h3>
+                <li>Z : Aller en haut</li>
+                <li>S : Aller en Bas</li>
+                <li>Espace : Lancer la balle</li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="carre">
+
+    </div>
+    <div id="spacebg">
+
+    </div>
+
+
+
+    <script type="text/javascript" src="js/solo.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- Google maps js scripts -->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <!-- assets js -->
+    <script src="js/assets.js"></script>
+    <script src="js/options.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
